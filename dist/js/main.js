@@ -35,8 +35,3 @@ function toggleMenu() {
 }
 
 // typed animation
-var typed = new Typed("#typed", {
-  strings: ["Web Developer", "Programmer", "Designer", "Enterpreneur"],
-  backspeed: 50,
-  typespeed: 60
-});
