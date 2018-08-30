@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <title>My Portfolio</title>
+    <title>Biswash Lamichhane</title>
 </head>
 
 <body id="bg-img">
-    <header>
+    <!-- <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -26,28 +26,23 @@
             </div>
             <ul class="menu-nav">
                 <li class="nav-item current">
-                    <a href="/home.html" class="nav-link">
+                    <a href="index.html" class="nav-link">
                         Home
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/about.html" class="nav-link">
+                    <a href="about.html" class="nav-link">
                         About Me
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/work.html" class="nav-link">
-                        My Work
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/contact.html" class="nav-link">
-                        How to Reach Me
+                    <a href="work.html" class="nav-link">
+                        Work
                     </a>
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
     <main id="home">
         <h1 class="lg-heading">
@@ -55,7 +50,11 @@
             <span class="text-secondary"> Lamichhane</span>
         </h1>
         <h2 class="sm-heading">
-            Wanna be Web Developer, Programmer, Designer & Enterpreneur
+            <span id="typed"></span>
+            <!-- Web Developer, Programmer, Designer & Enterpreneur -->
+        </h2>
+        <h2 class="con-heading">
+            <a href="mailto:bl0007@outlook.com">bl0007@outlook.com</a>
         </h2>
         <div class="icons">
             <a href="https://twitter.com/biswash_rl">
@@ -73,8 +72,20 @@
             <a href="https://www.twitch.tv/hvitsurk">
                 <i class="fab fa-twitch fa-2x"></i>
             </a>
+            <a href="https://steamcommunity.com/id/hvitsurk/">
+                <i class="fab fa-steam fa-2x"></i>
+            </a>
         </div>
     </main>
+
+    <script src="js/typed.js"></script>
+    <script>
+        var typed = new Typed("#typed", {
+            strings: ["Web Developer", "Programmer", "Designer", "Enterpreneur"],
+            backspeed: 50,
+            typespeed: 60
+        });
+    </script>
     <script src="js/main.js"></script>
 </body>
 

@@ -1,7 +1,7 @@
 @import "config";
 @import "menu";
 @import "mobile";
-
+@import "grid";
 * {
   box-sizing: border-box;
 }
@@ -13,11 +13,19 @@ html {
 body {
   @include background();
   background-color: $primary-color;
-  color: white;
+  color: set-text-color($primary-color);
   height: 100%;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  // font-family: "Spectral", serif;
+  font-family: "Playfair Display", serif;
   line-height: 1.5;
+}
+
+//links
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 //Headings
@@ -30,17 +38,29 @@ h3 {
   &.lg-heading {
     font-size: 6rem;
   }
-  &.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    background: rgba(lighten($primary-color, 2), 0.5);
-  }
-}
 
-//links
-a {
-  color: #fff;
-  text-decoration: none;
+  &.md-heading {
+    font-size: 2rem;
+  }
+  &.sm-heading {
+    color: #888b8e;
+    margin-bottom: 2rem;
+    padding: 0.2rem 0rem;
+    // background: rgba(lighten($primary-color, 2), 0.5);
+  }
+
+  &.con-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 0rem;
+    a {
+      &:hover {
+        color: #888b8e;
+        // color: $secondary-color;
+        @include easeOut();
+      }
+    }
+    // background: rgba(lighten($primary-color, 2), 0.5);
+  }
 }
 
 //header
@@ -60,6 +80,7 @@ main {
 
   .icons {
     margin-top: 1rem;
+    font-size: 1.3rem;
 
     a {
       padding: 0.4rem;
@@ -75,4 +96,8 @@ main {
       margin-top: 20vh;
     }
   }
+}
+
+.section {
+  padding: 2rem 0rem;
 }

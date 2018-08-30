@@ -1,4 +1,6 @@
-$primary-color: #121f1f;
+// $primary-color: #121f1f;
+$primary-color: #0b0c0c;
+
 // $secondary-color: #eece1a;
 $secondary-color: #ff0000;
 $show-home-image: true;
@@ -30,6 +32,17 @@ $background-opacity: 0.9;
   }
 }
 
+img {
+  width: 70vh;
+}
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) >40) {
+    @return #000;
+  } @else {
+    @return #e2e4e7;
+  }
+}
 // Media Query mixins
 @mixin mediaSm {
   @media screen and (max-width: 500px) {
