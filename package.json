@@ -5,7 +5,6 @@
   "main": "index.js",
   "homepage": "https://bl7.github.io/Portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css --recursive",
     "deploy": "gh-pages -d dist"
   },
   "author": "Biswash Lamichhane",
