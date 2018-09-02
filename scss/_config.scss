@@ -6,7 +6,6 @@ $secondary-color: #ff0000;
 $show-home-image: true;
 $home-image: url(../img/bg-img.jpeg);
 $background-opacity: 0.9;
-
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -17,6 +16,7 @@ $background-opacity: 0.9;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
+      height: 100vh;
 
       &:after {
         content: "";
