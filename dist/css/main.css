@@ -30,7 +30,7 @@ body#bg-img:after {
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: rgba(11, 12, 12, 0.7);
+  background: rgba(11, 12, 12, 0.5);
 }
 
 a {
@@ -86,7 +86,7 @@ header {
 }
 
 .text-secondary {
-  color: #ff0000;
+  color: #ce540b;
 }
 
 main {
@@ -104,7 +104,7 @@ main .icons a {
 }
 
 main .icons a:hover {
-  color: #ff0000;
+  color: #ce540b;
   transition: all 0.5s ease-out;
 }
 
