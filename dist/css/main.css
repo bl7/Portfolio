@@ -64,7 +64,10 @@ h3.sm-heading {
   margin-bottom: 2rem;
   padding: 0.2rem 0rem;
 }
-
+.my-desc {
+  margin-top: 3rem;
+  width: 50rem;
+}
 h1.con-heading,
 h2.con-heading,
 h3.con-heading {
