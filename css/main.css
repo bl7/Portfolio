@@ -16,7 +16,7 @@ body {
 }
 
 body#bg-img {
-  background: url(../img/bg-2.jpg) center;
+  background: url(../img/bg-img.jpeg) center;
   background-attachment: fixed;
   background-size: cover;
   height: 100vh;
